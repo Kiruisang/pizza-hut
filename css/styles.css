@@ -2,9 +2,17 @@
     align-items: center;
     margin-left: 25%;
     padding-left: 20%;
-    background-color: blueviolet;
 }
 .content {
     text-decoration: solid;
     color: blue;
+}
+.landing {
+    background-image: url(./boxes.jpg);
+}
+#about_us {
+    background-color: blueviolet;
+}
+#make-order {
+    background-color: burlywood;
 }
