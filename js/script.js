@@ -144,7 +144,7 @@ $(document).ready(function(){
       $("button.deliver").slideDown(1000);
       $("#addedprice").slideDown(1000);
       console.log("Your total bills is sh. "+checkoutTotal);
-      $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
+      $("#pizzatotal").append("Amount is sh. "+checkoutTotal);
     });
 
     $("button.deliver").click(function(){
@@ -156,7 +156,7 @@ $(document).ready(function(){
       $("#pizzatotal").hide();
       let deliveryamount= checkoutTotal+100;
       console.log("You will pay a total of . "+deliveryamount+" on delivery");
-      $("#totalbill").append("Your bill plus delivery fee is: "+deliveryamount);
+      $("#totalbill").append("Your  total bill plus delivery fee is: "+deliveryamount);
     });
 
     $("button#final-order").click(function(event){
@@ -173,7 +173,7 @@ $(document).ready(function(){
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
   
-        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliveryamount);
+        $("#finallmessage").append(person+",Your order has been received and it will be delivered to you at "+location+ ". Prepare sh. "+deliveryamount);
         $("#totalbill").hide();
         $("#finallmessage").slideDown(1200);
       }
