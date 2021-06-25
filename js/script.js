@@ -136,3 +136,30 @@ $(document).ready(function(){
       console.log(newOrder);
       
       
+
+    });
+    $("button#checkout").click(function(){ 
+      $("button#checkout").hide();
+      $("button.addPizza").hide();
+      $("button.deliver").slideDown(1000);
+      $("#addedprice").slideDown(1000);
+      console.log("Your total bills is sh. "+checkoutTotal);
+      $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
+    });
+
+    $("button.deliver").click(function(){
+      $(".pizzatable").hide();
+      $(".choice h2").hide();
+      $(".delivery").slideDown(1000);
+      $("#addedprice").hide();
+      $("button.deliver").hide();
+      $("#pizzatotal").hide();
+      let deliveryamount= checkoutTotal+100;
+      console.log("You will pay a total of . "+deliveryamount+" on delivery");
+      $("#totalbill").append("Your bill plus delivery fee is: "+deliveryamount);
+    });
+
+    $("button#final-order").click(function(event){
+      event.preventDefault();
+
+     
