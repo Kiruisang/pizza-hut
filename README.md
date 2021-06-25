@@ -5,6 +5,7 @@
 [Kirui Brian](https://github.com/Kiruisang)
 
 ## Description
+https://kiruisang.github.io/pizza-hut/
 
 This is a Pizzeria website where you as a client can order pizza and the website will give you the online menu, and all the varieties of pizza the Pizza place offers and it will calculate the overall price including delivery fee on there.
 
